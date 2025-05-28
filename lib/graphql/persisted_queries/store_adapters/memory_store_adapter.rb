@@ -17,6 +17,14 @@ module GraphQL
         def save(hash, query)
           @storage[hash] = query
         end
+
+        def serialize(query)
+          query
+        end
+
+        def deserialize(serialized_query)
+          serialized_query
+        end
       end
     end
   end
